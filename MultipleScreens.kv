@@ -1,0 +1,785 @@
+WindowManager:
+    FirstWindow:
+    SecondWindow:
+    ThirdWindow:
+    FourthWindow:
+    FifthWindow:
+    SixthWindow:
+    SeventhWindow:
+    EightWindow:
+    NinthWindow:
+    TenthWindow:
+
+
+<FirstWindow>:
+    name: "first"
+    BoxLayout:
+        RelativeLayout:
+            BoxLayout:
+                size_hint: .1, .1
+                pos_hint: {"x": .05, "center_y": .8725}
+                Label:
+                    text: "Screen 1"
+            BoxLayout:
+                size_hint: .8, .25
+                pos_hint: {"center_x": .6, "center_y": .8725}
+                StackLayout:
+                    orientation: "lr-tb"
+                    Button:
+                        text: "Screen 1"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "first"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 2"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "second"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 3"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "third"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 4"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "fourth"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 5"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "fifth"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 6"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "sixth"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 7"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "seventh"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 8"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "eight"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 9"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "ninth"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 10"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "tenth"
+                            app.root.transition.direction = "left"
+    BoxLayout:
+        Widget:
+            canvas:
+                Color:
+                    rgba: .25, .25, 1, 1
+                Rectangle:
+                    size: 200, 100
+                    pos: 200, 100
+                Line:
+                    circle: (550, 125, 100)
+                Line:
+                    ellipse: (600, 250, 100, 150)
+                Ellipse:
+                    pos: 100, 300
+                    size: 150, 100
+                Line:
+                    points: (root.width * .01, root.height * .01, root.width * .01,  root.height * .7)
+                Line:
+                    points: (root.width * .01, root.height * .01, root.width * .99,  root.height * .01)
+                Line:
+                    points: (root.width * .99,  root.height * .01, root.width * .99, root.height * .7)
+                Line:
+                    points: (root.width * .99,  root.height * .7, root.width * .01, root.height * .7)
+
+<SecondWindow>:
+    name: "second"
+    BoxLayout:
+        RelativeLayout:
+            BoxLayout:
+                size_hint: .1, .1
+                pos_hint: {"x": .05, "center_y": .8725}
+                Label:
+                    text: "Screen 2"
+            BoxLayout:
+                size_hint: .8, .25
+                pos_hint: {"center_x": .6, "center_y": .8725}
+                StackLayout:
+                    orientation: "lr-tb"
+                    Button:
+                        text: "Screen 1"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "first"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 2"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "second"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 3"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "third"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 4"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "fourth"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 5"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "fifth"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 6"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "sixth"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 7"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "seventh"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 8"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "eight"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 9"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "ninth"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 10"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "tenth"
+                            app.root.transition.direction = "left"
+
+<ThirdWindow>:
+    name: "third"
+    BoxLayout:
+        RelativeLayout:
+            BoxLayout:
+                size_hint: .1, .1
+                pos_hint: {"x": .05, "center_y": .8725}
+                Label:
+                    text: "Screen 3"
+            BoxLayout:
+                size_hint: .8, .25
+                pos_hint: {"center_x": .6, "center_y": .8725}
+                StackLayout:
+                    orientation: "lr-tb"
+                    Button:
+                        text: "Screen 1"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "first"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 2"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "second"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 3"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "third"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 4"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "fourth"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 5"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "fifth"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 6"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "sixth"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 7"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "seventh"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 8"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "eight"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 9"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "ninth"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 10"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "tenth"
+                            app.root.transition.direction = "left"
+
+<FourthWindow>:
+    name: "fourth"
+    BoxLayout:
+        RelativeLayout:
+            BoxLayout:
+                size_hint: .1, .1
+                pos_hint: {"x": .05, "center_y": .8725}
+                Label:
+                    text: "Screen 4"
+            BoxLayout:
+                size_hint: .8, .25
+                pos_hint: {"center_x": .6, "center_y": .8725}
+                StackLayout:
+                    orientation: "lr-tb"
+                    Button:
+                        text: "Screen 1"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "first"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 2"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "second"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 3"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "third"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 4"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "fourth"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 5"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "fifth"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 6"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "sixth"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 7"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "seventh"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 8"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "eight"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 9"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "ninth"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 10"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "tenth"
+                            app.root.transition.direction = "left"
+
+<FifthWindow>:
+    name: "fifth"
+    BoxLayout:
+        RelativeLayout:
+            BoxLayout:
+                size_hint: .1, .1
+                pos_hint: {"x": .05, "center_y": .8725}
+                Label:
+                    text: "Screen 5"
+            BoxLayout:
+                size_hint: .8, .25
+                pos_hint: {"center_x": .6, "center_y": .8725}
+                StackLayout:
+                    orientation: "lr-tb"
+                    Button:
+                        text: "Screen 1"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "first"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 2"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "second"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 3"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "third"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 4"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "fourth"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 5"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "fifth"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 6"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "sixth"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 7"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "seventh"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 8"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "eight"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 9"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "ninth"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 10"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "tenth"
+                            app.root.transition.direction = "left"
+
+<SixthWindow>:
+    name: "sixth"
+    BoxLayout:
+        RelativeLayout:
+            BoxLayout:
+                size_hint: .1, .1
+                pos_hint: {"x": .05, "center_y": .8725}
+                Label:
+                    text: "Screen 6"
+            BoxLayout:
+                size_hint: .8, .25
+                pos_hint: {"center_x": .6, "center_y": .8725}
+                StackLayout:
+                    orientation: "lr-tb"
+                    Button:
+                        text: "Screen 1"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "first"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 2"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "second"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 3"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "third"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 4"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "fourth"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 5"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "fifth"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 6"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "sixth"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 7"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "seventh"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 8"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "eight"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 9"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "ninth"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 10"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "tenth"
+                            app.root.transition.direction = "left"
+
+<SeventhWindow>:
+    name: "seventh"
+    BoxLayout:
+        RelativeLayout:
+            BoxLayout:
+                size_hint: .1, .1
+                pos_hint: {"x": .05, "center_y": .8725}
+                Label:
+                    text: "Screen 7"
+            BoxLayout:
+                size_hint: .8, .25
+                pos_hint: {"center_x": .6, "center_y": .8725}
+                StackLayout:
+                    orientation: "lr-tb"
+                    Button:
+                        text: "Screen 1"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "first"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 2"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "second"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 3"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "third"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 4"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "fourth"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 5"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "fifth"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 6"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "sixth"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 7"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "seventh"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 8"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "eight"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 9"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "ninth"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 10"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "tenth"
+                            app.root.transition.direction = "left"
+
+<EightWindow>:
+    name: "eight"
+    BoxLayout:
+        RelativeLayout:
+            BoxLayout:
+                size_hint: .1, .1
+                pos_hint: {"x": .05, "center_y": .8725}
+                Label:
+                    text: "Screen 8"
+            BoxLayout:
+                size_hint: .8, .25
+                pos_hint: {"center_x": .6, "center_y": .8725}
+                StackLayout:
+                    orientation: "lr-tb"
+                    Button:
+                        text: "Screen 1"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "first"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 2"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "second"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 3"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "third"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 4"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "fourth"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 5"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "fifth"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 6"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "sixth"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 7"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "seventh"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 8"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "eight"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 9"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "ninth"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 10"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "tenth"
+                            app.root.transition.direction = "left"
+
+<NinthWindow>:
+    name: "ninth"
+    BoxLayout:
+        RelativeLayout:
+            BoxLayout:
+                size_hint: .1, .1
+                pos_hint: {"x": .05, "center_y": .8725}
+                Label:
+                    text: "Screen 9"
+            BoxLayout:
+                size_hint: .8, .25
+                pos_hint: {"center_x": .6, "center_y": .8725}
+                StackLayout:
+                    orientation: "lr-tb"
+                    Button:
+                        text: "Screen 1"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "first"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 2"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "second"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 3"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "third"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 4"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "fourth"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 5"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "fifth"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 6"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "sixth"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 7"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "seventh"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 8"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "eight"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 9"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "ninth"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 10"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "tenth"
+                            app.root.transition.direction = "left"
+
+<TenthWindow>:
+    name: "tenth"
+    BoxLayout:
+        RelativeLayout:
+            BoxLayout:
+                size_hint: .1, .1
+                pos_hint: {"x": .05, "center_y": .8725}
+                Label:
+                    text: "Screen 10"
+            BoxLayout:
+                size_hint: .8, .25
+                pos_hint: {"center_x": .6, "center_y": .8725}
+                StackLayout:
+                    orientation: "lr-tb"
+                    Button:
+                        text: "Screen 1"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "first"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 2"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "second"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 3"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "third"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 4"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "fourth"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 5"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "fifth"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 6"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "sixth"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 7"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "seventh"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 8"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "eight"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 9"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "ninth"
+                            app.root.transition.direction = "left"
+                    Button:
+                        text: "Screen 10"
+                        size_hint: .5, .2
+                        on_press:
+                            app.root.current =  "tenth"
+                            app.root.transition.direction = "left"

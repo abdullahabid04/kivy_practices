@@ -1,0 +1,72 @@
+boxLayoutExample:
+
+
+<boxLayoutExample@BoxLayout>:
+    orientation: "horizontal"
+    spacing: "5dp"
+    Button:
+        text: "A"
+        size_hint: .5, .5
+        pos_hint: {"center_y": .5}
+
+    BoxLayout:
+        orientation: "vertical"
+        spacing: "5dp"
+        Button:
+            text: "B"
+        Button:
+            text: "B"
+        Button:
+            text: "B"
+        Button:
+            text: "B"
+        Button:
+            text: "B"
+
+    Button:
+        text: "C"
+        size_hint: .5, .5
+        pos_hint: {"center_y": .5}
+
+    Label:
+        text: "Label"
+        size_hint: .5, 1
+
+
+<anchorLayoutExample@AnchorLayout>:
+    anchor_x: "left"
+    anchor_y: "top"
+    BoxLayout:
+        size_hint: None, 1
+        width: "350dp"
+        Button:
+            text: "Hello World"
+        Button:
+            text: "Hello World"
+        BoxLayout:
+            size_hint: None, 1
+            width: "175dp"
+            Button:
+                text: "Hello World"
+            Button:
+                text: "Hello World"
+
+
+<gridLayoutExample@GridLayout>:
+    cols: 3
+    Button:
+        text: "Hello World"
+        size_hint: None, 1
+        width: "100dp"
+    boxLayoutExample:
+    Button:
+        text: "Hello World"
+    Button:
+        text: "Hello World"
+        size_hint: None, 1
+        width: "100dp"
+    Button:
+        text: "Hello World"
+    anchorLayoutExample:
+
+

@@ -1,0 +1,66 @@
+<Block>:
+    size_hint: 0.09, 0.05
+    canvas:
+        Color:
+            rgb: self.colour
+        Rectangle:
+            pos: self.pos
+            size: self.size
+        Color:
+            rgb: 0.1, 0.1, 0.1
+        Line:
+            rectangle:
+                [self.x, self.y, self.width, self.height]
+
+<Player>:
+    size_hint: 0.1, 0.025
+    pos_hint: {'x': self.position, 'y': 0.1}
+    canvas:
+        Color:
+            rgba: 1, 1, 1, 1
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+<Ball>:
+    pos_hint: {'x': self.pos_hint_x, 'y': self.pos_hint_y}
+    size_hint: None, None
+    proper_size:
+        min(0.03*self.parent.height, 0.03*self.parent.width)
+    size: self.proper_size, self.proper_size
+    canvas:
+        Color:
+            rgb: 1, 0.55, 0
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+<Game>:
+    ball: the_ball
+    player: the_player
+
+    Ball:
+        id: the_ball
+    Player:
+        id: the_player
+
+<GameEndPopup>:
+    size_hint: 0.8, 0.8
+    auto_dismiss: False
+
+    BoxLayout:
+        orientation: 'vertical'
+        Label:
+            text: root.message
+            font_size: 60
+            markup: True
+            halign: 'center'
+
+    Button:
+        size_hint_y: None
+        height: sp(80)
+        text: 'Play again?'
+        font_size: 60
+        on_release:
+            root.game.start()
+            root.dismiss()
